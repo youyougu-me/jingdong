@@ -1,0 +1,469 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dozgq9');
+  src:  url('../fonts/icomoon.eot?dozgq9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dozgq9') format('truetype'),
+    url('../fonts/icomoon.woff?dozgq9') format('woff'),
+    url('../fonts/icomoon.svg?dozgq9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	background-color: #F6F6F6;
+}
+li{
+	list-style: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+input,button{
+	padding: 0;
+}
+a{
+	text-decoration:none; 
+}
+img{
+	vertical-align: top;/*去除图片底册缝隙， 因为图片默认和文字基线对齐*/
+}
+.clearfix:after{ /*清除浮动*/
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+
+.style-red {
+	color:#f10215 !important; 
+}
+.w{
+	width: 1055px;
+	margin: 0 auto;
+}
+.fr{
+    float:right;
+}
+.fl{
+	float: left;
+}
+/*顶部开始*/
+.j_event{
+	background-color: #000;
+}
+.j_event a{
+	height: 70px;
+	display: block;
+	background: url(../images/top.jpg);
+	position: relative;
+}
+.j_event a i{
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	/*font-family: "icomoon";*/
+	font-style: normal;
+	font-size: 12px;
+	color: #fff;
+	background-color: (0,0,0,0.4);
+	font-weight: 300;
+}
+/*顶部结束*/
+
+/*快捷导航栏开始*/
+.shotcut{
+	height: 26px;
+	line-height: 26px;
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #DDDDDD;
+	color: #9D9D9D;
+	font-size: 12px;
+}
+
+.shotcut .fl li {
+	margin-left: 188px;
+}
+.shotcut .fl li a{
+	cursor: pointer;
+}
+.shotcut .fr li{
+	float: left;
+}
+.shotcut .fr a{
+	color: #9D9D9D;
+	font-size: 12px;
+	cursor: pointer;
+}
+.shotcut .fpos{ /*fl里面唯一的一个li,里面一个图标i pos，一个文字a*/
+	position: relative; /*帮助定位图标定位*/
+}
+.shotcut .pos{
+	font-family: "icomoon";
+	font-style: normal;
+	color: #f10215;
+	font-size:12px;
+	position: absolute;
+	top: 1px;
+}
+.shotcut .fr a:hover{
+	color: #f10215;
+}
+ .spacer{ /*用来当竖线的li*/
+	width: 1px;
+	height: 10px;
+	margin:6px 8px 0;
+	background-color: #ccc;
+}
+.dropdown{ /*它就是三个特殊Li,这个样式是为了在li右边流出空隙加下拉符号*/
+	padding-right: 10px;
+	position: relative;
+}
+.dropdown i{
+	font-family: "icomoon";
+	font-style: normal;
+	position: absolute;
+	right: -3px;
+	top: 0;
+	font-size: 14px;
+}
+.erweima{
+	width: 53px;
+	height: 52px;
+	background: url(../images/erweima.jpg ) no-repeat;
+	position: absolute;
+	top:29px;
+	left: -9px;
+	border: 1px solid #ccc;
+	padding: 1px;
+}
+/*快捷导航栏结束*/
+
+/*header开始*/
+.header{
+	height: 124px;
+}
+.header .header-inner{
+	height: 124px;
+	/*background-color: pink;*/
+	position: relative;
+}
+.header .log{
+	width: 162px;
+	height: 152px;
+	background:url(../images/jdlog.jpg) no-repeat;
+	position: absolute;
+	top: -27px;
+	left: 0px;
+	box-shadow: 0 -12px 10px rgba(0,0,0,0.2);
+}
+.header .log h1{
+	margin: 0;
+}
+.header .log a{
+	display: block;
+	width: 162px;
+	height: 152px;
+	text-indent: -9999px;  /*让a里面的文字横向缩进*/
+	overflow: hidden;/*跑出去的切掉*/
+}
+ .search{
+	width: 488px;
+	height: 31px;
+	background-color: purple;
+	position: absolute;
+	left: 285px;
+	top:22px;
+}
+.search input{
+	width: 436px;
+	height: 29px;
+	border: 1px solid #FF1B10;
+	color: #ccc;
+	padding: 0 0 0 5px;
+	outline: none;
+	float: left;
+	font-size: 15px;
+}
+.search button{
+	width: 45px;
+	height: 31px;
+	background-color: #F10215;
+	cursor: pointer;
+	outline: none;
+	float: left;
+	border-width: 0;
+}
+.search button i{
+	font-family: "icomoon";
+	font-style: normal;
+	font-size: 18px;
+	color:#ECFBE4;
+}
+.search em{
+	font-family: "icomoon";
+	font-style: normal;
+	position: absolute;
+	left: 413px;
+	top: 7px;
+	color: #ccc;
+	cursor: pointer;
+}
+.search em:hover{
+	color:#F10215; 
+}
+.myCar{
+	width: 155px;
+	height: 29px;
+	border: 1px solid #ccc;
+	line-height: 29px;
+	top:22px;
+	left: 802px;
+	position: absolute;
+	padding-left: 15px;
+}
+.myCar a{
+	font-size: 12px;
+	color:#F10215;
+}
+.myCar i{
+	font-family: "icomoon";
+	font-size: 12px;
+	color:#F10215;
+}
+.myCar s{
+	position: absolute;
+	left: 120px;
+	top: 5px;
+	height: 12px;
+	line-height: 12px;
+	background-color:#F10215;
+	text-decoration:none; 
+	font-size: 12px;
+	padding:0 3px;
+	border-radius: 6px;
+	color: #fff;
+}
+.computer{
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+.computer a{
+	display: block;
+	width: 152px;
+	height: 28px;
+	background:url(../images/computer.jpg) ;
+	/*background-position: 1px 0;*/
+	border-radius:15px;
+}
+.hotwords{
+	position: absolute;
+	top:60px;
+	left: 285px;
+}
+.hotwords a{
+	font-size: 12px;
+	color: #9E9B99;
+}
+.hotwords a:hover{
+	color: #F10215;
+}
+.navitems{
+	position: absolute;
+	left: 177px;
+	bottom: 0;
+}
+.navitems ul {
+	float: left;
+}	
+.navitems ul li{
+	float: left;
+	margin-left: 24px;
+	height: 37px;
+	line-height: 37px;
+}
+.navitems  li a{
+	font-weight:700;
+	color: #61666C; 
+}
+.navitems  li a:hover{
+	color: #F10215;
+}
+.navitems .spacer{  /*前面有个单写的spacer，只是被这里层叠掉了*/
+	float: left;
+	margin-top: 15px;
+	margin-left: 17px;
+	margin-right: -7px;
+	color: #61666C;
+	height: 12px;
+}	
+/*header结束*/
+
+/*底部开始*/
+.footer{
+	height: 483px;
+	background-color: #E8EAE7;
+}
+.footer-service{
+	border-bottom: 1px solid #E0E2DF;
+}
+.footer-service-inner{
+	/*height: 88px; 不给高，靠它自己的内容来撑开*/
+	background-color: #E8EAE7;
+	padding: 25px 0;
+}
+.footer-service-inner li{
+	float: left;
+	height: 43px;
+	width: 262px;
+	/*background-color: purple;*/
+}
+.service_in{
+	height: 43px;
+	width: 210px;
+	margin: 0 0 0 33px;	
+	position: relative;
+}
+.service_in h5{
+	margin:0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding:0;
+	width: 37px;
+	height: 43px;
+	/*background: url(../images/bottomsprit.png ) no-repeat 0 -191px;*/
+	text-indent: -999px;
+	overflow: hidden;
+}
+.service_in span{
+	display: block;
+	height: 43px;
+	line-height: 43px;	
+	font-size: 16px;
+	margin-left: 42px;
+	font-weight: 700;
+}
+.service_in .duo{
+	background: url(../images/bottomsprit.png ) no-repeat 0 -191px;
+}
+.service_in .kuai{
+	background: url(../images/bottomsprit.png ) no-repeat -40px -191px;
+}
+.service_in .hao{
+	background: url(../images/bottomsprit.png ) no-repeat -81px -191px;
+}
+.service_in .sheng{
+	background: url(../images/bottomsprit.png ) no-repeat -122px -191px;
+}
+.footer-help{
+	height: 156px;
+	/*background-color: pink;*/
+	padding-top: 22px;
+}
+.footer-help dl{
+	float: left;
+	width: 170px;
+}
+.footer-help dt{
+	color: #656668;
+	font-weight: 700;
+	font-size: 16px;
+	height: 25px;
+}
+.footer-help dd{
+	height: 19px;
+}
+.footer-help dd a{
+	color: #5D625E;
+	font-size: 12px;
+}
+.footer-help dd a:hover{
+	color: #f10215;
+}
+.footer-help .cover{
+	width: 163px;
+	height: 98px;
+	background:url(../images/map.png) no-repeat;
+}
+.cover dt{
+	text-align: center;
+}
+.cover .info{
+	font-size: 12px;
+	color: #5D625E;
+	width: 152px;
+	height: 50px;
+	line-height: 18px;
+
+}
+.cover .more{
+	margin-top: 23px;
+	text-align: right;
+	margin-right: 8px;
+}
+.copyright{
+/*	background-color: pink;*/
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+.links{
+	text-align: center;
+}
+.links a{
+	font-size: 12px;
+	color: #727272;
+} 
+.links a:hover{
+	color: #F10215;
+}
+.links span{
+	font-size: 12px;
+	color: #D4CDCD;
+	margin: 0 3px;
+}
+.c-info {
+	font-size: 12px;
+	color: #9E9E9B;
+	text-align: center;
+	line-height: 20px;
+	margin-top: 10px;
+}
+.c-info span{
+	margin: 0 6px;
+}
+.tupian{
+	text-align: center; /*行内元素当文字来看，可以用这个居中*/
+	margin-top: 10px;
+}
+.tupian a{
+	display: inline-block;
+	width: 103px;
+	height: 34px;
+	
+}
+.tupian .one{
+	background: url(../images/bottomsprit.png) no-repeat -205px -147px;
+}
+.tupian .two{
+	background: url(../images/bottomsprit.png) no-repeat -205px -110px;
+}
+.tupian .three{
+	background: url(../images/bottomsprit.png) no-repeat -205px -147px;
+}
+.tupian .four{
+	background: url(../images/bottomsprit.png) no-repeat -205px -147px;
+}
+.tupian .five{
+	background: url(../images/bottomsprit.png) no-repeat -205px -147px;
+}
+.tupian .six{
+	background: url(../images/bottomsprit.png) no-repeat -205px -147px;
+}
+/*底部结束*/

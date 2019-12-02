@@ -1,0 +1,273 @@
+/*京东首页的css*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.main1{
+	height: 423px;
+	/*background-color: pink;*/
+	position: relative;
+}
+.main1-inner{               /*我的版心宽1055*/
+	height: 423px;
+	background-color: #eee;
+	position: relative;
+	z-index: 1;  /*比fly高*/
+}
+
+.main1 .fly a{
+	display: block;
+	height: 423px;
+	background: url(../images/fly_r2_c2.jpg) no-repeat top center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; /*行内块靠内容支撑，必须给这个，不然就看不到，而且
+	加了这个top center 有效果哦*/
+
+}
+.main1_clo1{
+	width: 162px;
+	height: 403px;
+	background-color: #6C6666; 
+	float: left;
+	padding-top: 20px;
+}
+.main1_clo1 li{
+	margin-left: 10px;
+	height: 25px;
+	line-height: 25px;
+}
+.main1_clo1 li a{
+	font-size: 13px;
+	color: #fff;
+}
+.main1_clo1 li span{
+	font-size: 13px;
+	color: #fff;
+}
+.main1_clo1 li:hover{
+	background-color: #ccc;
+}
+.main1_clo1 li:hover a{
+	color: #F10215;
+}
+
+.main1_clo2{
+	width: 700px;
+	height: 423px;
+	/*background-color: purple; */
+	float: left;
+	margin-left: 11px;
+}
+.main1_clo2-head{
+	height: 301px;
+	background-color: red;
+	position: relative;
+}
+.main1_clo2-body {
+	height: 115px; 
+	margin-top: 7px;
+}
+.main1_clo2-body div{
+	width: 346px;
+	height: 115px;
+	float: left;
+}
+.main1_clo2-body div img{
+	width: 100%; /*保持和父亲一样宽*/
+}
+.main1_clo2-body .left{
+	margin-right: 8px;
+}
+.main1_clo2 .arrow{
+	position: absolute;
+	width: 700px;
+	height: 50px;
+	/*background-color: yellow;*/
+	top: 50%;
+	margin-top: -15px;
+}
+.arrow-l,.arrow-r{
+	width:30px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	cursor: pointer;  
+}
+
+.arrow-l{
+	float: left;
+}
+.arrow-r{
+	float: right;
+}
+.main1_clo2-head ol{
+	position: absolute;
+	width: 193px;
+	height:30px;
+	background-color: rgba(0,0,0,0.7);
+	left: 50%;
+	margin-left: -100px;
+	bottom: 20px;
+	border-radius: 29px;
+	padding-left:7px; 
+}
+.main1_clo2-head ol li{
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	float: left;
+	margin:8px 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.main1_clo3{
+	width: 171px;
+	height: 423px;
+	/*background-color: yellow; */
+	float: right;
+	background-color: #fff;
+}
+.user{
+	height: 100px;
+	/*background-color: green;*/
+}
+.user .hi{
+	position: relative;
+	height: 42px;
+	padding-left: 45px;
+	padding-top: 15px;
+	font-size: 12px;
+	line-height: 21px;
+	color: #727876;
+}
+.user .hi a{
+	font-size: 12px;
+	color: #727876;
+}
+.user .hi a:hover{
+	color: #F10215;
+}
+.user .hi .headpic{
+	position: absolute;
+	top:15px;
+	left: 0px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.user .hi .headpic img{
+	width: 100%;
+	height:auto;
+	margin-left: -1px;
+}
+.user .well{
+	text-align: center;
+	margin-top: 10px;
+}
+.user .well a{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	color: #F10215;
+	font-size: 12px;
+	border: 2px solid #F10215;
+}
+.news{
+	height: 133px;
+	/*background-color: purple;*/
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding: 5px 15px 0;
+}
+.news-head{
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0;
+	position: relative;
+}
+.news-head a{
+	font-size: 12px;
+	color: #727876;
+	cursor: pointer;
+}
+.news-head a:hover{
+	color: #F10215;
+}
+.news-head .cuxiao{
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+	margin-right: 5px;
+}
+.news-head .more1{
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+.news-head .line{
+	position: absolute;
+	background-color: #F10215;
+	width: 28px;
+	height: 2px;
+	top: 25px;
+	left: 0;
+}
+.news-body{
+	margin-top: 10px;
+}
+.news-body a{
+	font-size: 12px;
+	color:#727876; 
+	cursor: pointer;
+}
+.news-body a:hover{
+	color: #F10215;
+}
+.sevices{
+	height: 185px;
+	/*background-color: pink;*/
+	overflow: hidden;/*切掉多余的*/
+
+}
+.sevices ul{
+	width: 180px; /*强制4个li在一排*/
+}
+.sevices li{
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 42px;
+	height: 61px;
+	float: left;
+}
+.sevices li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.sevices li p{
+	font-size: 12px;
+	color: #727876;
+	text-align: center;
+}
+.sevices li i{
+	display: block;
+	width: 24px;
+	height: 24px;
+	background-color: pink;
+	margin: 12px auto 5px;
+	background: url(../images/t1.png) no-repeat left top;
+
+}
+.sevices li .t1{
+	background: url(../images/t1.png) no-repeat left top;
+
+}
+.sevices li .t2{
+	background: url(../images/t2.png) no-repeat left top;
+
+}
